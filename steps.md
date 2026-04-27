@@ -183,5 +183,20 @@ For every test complaint:
 
 Used to diagnose *why* specific tags fail — feeds directly into Block 13 review prioritisation.
 
+# In Block 12 — after classification_report
+```
+per_tag_f1 = f1_score(tl_h, preds, average=None, zero_division=0)
+thr_df['test_f1'] = per_tag_f1
+
+# Bucket your tags
+zero_f1    = thr_df[thr_df['test_f1'] == 0]
+low_f1     = thr_df[(thr_df['test_f1'] > 0) & (thr_df['test_f1'] < 0.4)]
+decent_f1  = thr_df[thr_df['test_f1'] >= 0.4]
+
+print(f"Tags with F1 = 0.00 : {len(zero_f1)}  ← fix these first")
+print(f"Tags with F1 < 0.40 : {len(low_f1)}")
+print(f"Tags with F1 >= 0.40: {len(decent_f1)}")
+print(zero_f1[['tag','train_freq_%','threshold','test_f1']].to_string())
+```
 ***
 
