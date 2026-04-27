@@ -1,4 +1,5 @@
 #Why Progress Was Limited, Why the Data Is the Hardest Part, and Why This Is the Right Path Forward
+<img width="778" height="608" alt="image" src="https://github.com/user-attachments/assets/2e6ca242-2d16-4a78-8df0-b762d4760302" />
 
 ## 1. The Scope Changed Three Times — The Compute Did Not
 
