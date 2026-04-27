@@ -7,7 +7,7 @@
 
 ***
 
-###The Core Problem
+### The Core Problem
 
 **What This Model Actually Does**
 
@@ -185,4 +185,3 @@ Used to diagnose *why* specific tags fail — feeds directly into Block 13 revie
 
 ***
 
-These are clean, focused, and grounded in your actual code. No hierarchical framing anywhere. Let me know if you want the actual `.pptx` file built out!
