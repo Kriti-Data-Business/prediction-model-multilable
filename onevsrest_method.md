@@ -1,3 +1,12 @@
+# Why OvR Gives Low F1 on Your Data
+OvR trains 96 completely independent binary classifiers. The core problem is that each classifier sees the full dataset but only one label's signal at a time it has no idea that "Account breach" and "Fraudulent transfer" co-occur frequently, or that "Consumer protection" is almost always paired with other tags. Your specific pain points:
+
+Problem	What OvR does	Why it hurts
+- Label co-occurrence ignored	Each of 96 classifiers is independent	Misses signal that certain tags always appear together
+- Severe imbalance	No built-in mechanism to handle 180× ratio	Rare tags get F1 ≈ 0.00 even with class_weight='balanced'
+- Rich complaint text	TF-IDF loses word order and semantics	"I did NOT receive a refund" ≈ "I received a refund" in BoW
+- Overlapping tag meanings	No shared representation	Can't learn that semantically similar tags share features
+- Typical OvR Macro F1 on a 96-label text problem with severe imbalance: 0.28–0.42. DistilBERT with AsymmetricLoss on the same data: 0.55–0.72, because it learns label correlations through the shared encoder.
 
 ## 4. Why One-vs-Rest + Logistic Regression Is the Wrong Tool Here
 
