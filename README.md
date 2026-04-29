@@ -1,8 +1,8 @@
 # Multi-Label Complaint Classification Pipeline
 ### Telecom Complaint Tagging · 96 Tags · DistilBERT + CleanLab · Two-Approach Experimental Design
 
-> **Thesis Project** — Master of Data Science (Project Stream), RMIT University  
-> **Research Focus:** How data quality correction, smart sampling, and transformer-based architectures compare against classical multi-label baselines for real-world complaint classification at scale.
+> ** Project** — Master of Data Science (Project Stream), RMIT University  
+> How data quality correction, smart sampling, and transformer-based architectures compare against classical multi-label baselines for real-world complaint classification at scale.
 
 ***
 
