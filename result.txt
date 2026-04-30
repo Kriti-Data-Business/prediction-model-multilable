@@ -1,0 +1,8 @@
+ Loss: 0.0408  |  Val Macro F1: 0.0113  |  Val Micro F1: 0.1789
+  Loss: 0.0381  |  Val Macro F1: 0.1569  |  Val Micro F1: 0.2866
+  Loss: 0.0340  |  Val Macro F1: 0.3465  |  Val Micro F1: 0.3799
+  Loss: 0.0319  |  Val Macro F1: 0.4042  |  Val Micro F1: 0.4232
+  Loss: 0.0318  |  Val Macro F1: 0.3939  |  Val Micro F1: 0.4176
+
+Training complete | Best Val Macro F1: 0.4042
+Saved: checkpoints/best_model.pt | epoch_N.pt files | training_history.csv
